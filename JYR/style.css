@@ -91,5 +91,10 @@ table {
   h3 {
     page-break-after: avoid; } }
 
+body {
+  font-family: "Arial"; }
+
 h1 {
-  color: green; }
+  color: green;
+  font-family: 'Bebas Neue';
+  font-size: 50px; }
