@@ -91,10 +91,30 @@ table {
   h3 {
     page-break-after: avoid; } }
 
-body {
-  font-family: "Arial"; }
+.data {
+  position: absolute;
+  bottom: 0px; }
 
-h1 {
-  color: green;
-  font-family: 'Bebas Neue';
-  font-size: 50px; }
+html, body, .wrapper, main, .main {
+  font-family: "Bebas Neue";
+  height: 100%; }
+
+header {
+  position: absolute; }
+
+.logo a {
+  display: block;
+  text-decoration: none; }
+  .logo a h1 {
+    font-size: 250px;
+    color: #222121;
+    position: absolute;
+    padding: 40px; }
+
+/*SECTION MAIN*/
+.main {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+/*SECTION MAIN*/
