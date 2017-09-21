@@ -2,23 +2,48 @@
 	position:absolute;
 	bottom: 0px;
 }
+/*VARS*/
+
+$color-black:#222121;
+$color-red:#be2626;
+
+/*END VARS*/
+
+
 html, body, .wrapper, main, .main{
 	font-family: "Bebas Neue";
 	height: 100%;
 }
 header{
+	display: block;
 	position: absolute;
-}
+	top: 5%;
+	left: 5%;
 
-.logo{
-	a{
+	#logo{
+		font-size: 140px;
 		display: block;
 		text-decoration: none;
-		h1{
-			font-size: 250px;
-			color: #222121;
-			position: absolute;
-			padding: 40px;
+		color: $color-black;
+	}
+
+	nav{
+		ul{
+			li{
+
+				a{
+					display: block;
+					font-size: 20px;
+					text-decoration: none;
+					color: $color-black;
+					height: 30px;
+					line-height: 30px;
+
+					&:hover{
+						color:$color-red;
+					}
+				}
+			}
 		}
 	}
 }
@@ -33,3 +58,11 @@ header{
 	background-repeat: no-repeat;
 }
 /*SECTION MAIN*/
+
+
+
+
+
+@media only screen and (min-width:480px) {
+
+}

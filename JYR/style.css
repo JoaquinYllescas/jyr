@@ -95,21 +95,31 @@ table {
   position: absolute;
   bottom: 0px; }
 
+/*VARS*/
+/*END VARS*/
 html, body, .wrapper, main, .main {
   font-family: "Bebas Neue";
   height: 100%; }
 
 header {
-  position: absolute; }
-
-.logo a {
   display: block;
-  text-decoration: none; }
-  .logo a h1 {
-    font-size: 250px;
+  position: absolute;
+  top: 5%;
+  left: 5%; }
+  header #logo {
+    font-size: 140px;
+    display: block;
+    text-decoration: none;
+    color: #222121; }
+  header nav ul li a {
+    display: block;
+    font-size: 20px;
+    text-decoration: none;
     color: #222121;
-    position: absolute;
-    padding: 40px; }
+    height: 30px;
+    line-height: 30px; }
+    header nav ul li a:hover {
+      color: #be2626; }
 
 /*SECTION MAIN*/
 .main {

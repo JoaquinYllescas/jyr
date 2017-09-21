@@ -1,4 +1,4 @@
-<?php /* Template Name: JYR Template Home */ get_header(); ?>
+<?php /* Template Name: JYR Template CONTACT */ get_header(); ?>
 <div class="data">
 <?php
 $fields = get_fields();
@@ -10,7 +10,6 @@ print_r($fields);
 
 	<main role="main">
 		<!-- section -->
-
 		<section class="main" style="background-image:url('<?php echo($fields["background"]["url"]); ?>');">
 
 			<!-- <h1><?php the_title(); ?></h1> -->
