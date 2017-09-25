@@ -13,5 +13,8 @@
     "gulp-install": "^1.1.0",
     "gulp-sass": "^3.1.0",
     "gulp-watch": "^4.3.11"
+  },
+  "dependencies": {
+    "parallax-js": "^3.1.0"
   }
 }

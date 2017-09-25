@@ -1,6 +1,7 @@
 .data{
 	position:absolute;
 	bottom: 0px;
+	z-index: 10;
 }
 /*VARS*/
 
@@ -19,6 +20,7 @@ header{
 	position: absolute;
 	top: 5%;
 	left: 5%;
+	z-index: 100;
 
 	#logo{
 		font-size: 140px;
@@ -52,11 +54,38 @@ header{
 
 
 /*SECTION MAIN*/
-.main{
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
+
+
+#scene{
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 95;
+  
+
+	.bgScene{
+		width: 110% !important;
+		height: 110% !important;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.faceScene{
+		width: 104% !important;
+		height: 104% !important;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
 }
+.staticBg{
+		width: 100%;
+		height: 100%;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		z-index: 90;
+	}
 /*SECTION MAIN*/
 
 
