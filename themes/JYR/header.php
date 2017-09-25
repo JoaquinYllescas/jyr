@@ -49,3 +49,9 @@
 
 			</header>
 			<!-- /header -->
+
+
+
+			<div class="loader">
+				<span>JYR</span>
+			</div>

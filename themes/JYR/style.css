@@ -100,7 +100,8 @@ table {
 /*END VARS*/
 html, body, .wrapper, main, .main {
   font-family: "Bebas Neue";
-  height: 100%; }
+  height: 100%;
+  background-color: #222121; }
 
 header {
   display: block;
@@ -122,6 +123,23 @@ header {
     line-height: 30px; }
     header nav ul li a:hover {
       color: #be2626; }
+
+.loader {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 99;
+  top: 0px;
+  left: 0px;
+  background-image: url("http://jyr.dev/wp-content/uploads/2017/09/patternLoader.jpg"); }
+  .loader span {
+    display: block;
+    color: #ffffff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px; }
 
 /*SECTION MAIN*/
 #scene {
