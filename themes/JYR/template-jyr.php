@@ -26,12 +26,23 @@ print_r($fields);
 			  			<div class="faceScene" data-depth="0.5" style="background-image:url('<?php echo($fields["background_parallax_front"]["url"]); ?>');" data-depth="0.6"></div>
 		  			</div>
 		  		<?php	
-					}elseif(($fields["parallax/video/image"] == "video") &&  ($fields["background_video"]["url"] != "")  ){
+					}elseif(($fields["parallax/video/image"] == "video")   ){
 
 				?>
 
 				<!-- Si seleccionamos video -->
-						<div>VIDEO</div>
+						
+						<!-- <video poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" playsinline autoplay muted loop>
+						  WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button 
+						<source src="http://thenewcode.com/assets/videos/polina.webm" type="video/webm">
+						<source src="http://thenewcode.com/assets/videos/polina.mp4" type="video/mp4">
+						</video> -->
+
+						
+						  <video id="bgvid" autoplay muted loop>
+						    <source src="http://jyr.dev/wp-content/uploads/2017/09/flores.mp4" type="video/mp4">
+						  </video>
+						
 				<?php
 					}else{
 				?>
@@ -69,5 +80,5 @@ print_r($fields);
 <?php
  // get_sidebar();
 ?>
-
-<?php get_footer(); ?>
+<!-- 
+<?php get_footer(); ?> -->

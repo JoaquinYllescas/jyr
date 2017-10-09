@@ -19,15 +19,16 @@
 				if($("#scene").length > 0 ){
 					var scene = document.getElementById('scene');
 					var parallax = new Parallax(scene, {
-					  calibrateX: false,
-					  calibrateY: false,
+					  relativeInput: true,
+					  calibrateX: true,
+					  calibrateY: true,
 					  invertX: true,
 					  invertY: true,
-					  limitX: 100,
-					  limitY: 10,
+					  limitX: 50,
+					  limitY: 50,
 					  scalarX: 3,
 					  scalarY: 3,
-					  frictionX: 0.8,
+					  frictionX: 0.4,
 					  frictionY: 0.8,
 					  onReady: function(){
 					
@@ -42,7 +43,7 @@
 				}
 
 				
-
+				$(".loader").fadeOut("1000");
 
 			});
 //HOME PAGE

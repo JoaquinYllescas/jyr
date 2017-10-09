@@ -103,6 +103,9 @@ html, body, .wrapper, main, .main {
   height: 100%;
   background-color: #222121; }
 
+body {
+  overflow: hidden; }
+
 header {
   display: block;
   position: absolute;
@@ -142,6 +145,20 @@ header {
     font-size: 50px; }
 
 /*SECTION MAIN*/
+video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 91;
+  transform: translateX(-50%) translateY(-50%);
+  background: url("http://jyr.dev/wp-content/uploads/2017/09/dublinNight-3-768x512.jpg") no-repeat;
+  background-size: cover;
+  transition: 1s opacity; }
+
 #scene {
   width: 100% !important;
   height: 100% !important;
@@ -150,10 +167,12 @@ header {
     width: 110% !important;
     height: 110% !important;
     background-repeat: no-repeat;
-    background-size: cover; }
+    background-size: cover;
+    margin-top: -20px;
+    margin-left: -20px; }
   #scene .faceScene {
-    width: 104% !important;
-    height: 104% !important;
+    width: 105% !important;
+    height: 105% !important;
     background-repeat: no-repeat;
     background-size: cover; }
 
