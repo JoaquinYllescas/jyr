@@ -12,6 +12,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="<?php bloginfo('description'); ?>">
 
+		<link href="https://fonts.googleapis.com/css?family=Teko:300,400,500" rel="stylesheet">
+
 		<?php wp_head(); ?>
 		<script>
         // conditionizr.com

@@ -32,7 +32,7 @@
 					  frictionY: 0.8,
 					  onReady: function(){
 					
-						$(".loader").delay(1000).fadeOut("1000");	
+						// $(".loader").delay(1000).fadeOut("1000");	
 
 					
 					  }
