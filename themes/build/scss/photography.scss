@@ -1,0 +1,48 @@
+.photography{
+	.projects{
+		height: 100%;
+		width: 40%;
+		position: absolute;
+		right: 5%;
+		padding: 0px 20px;
+		background-color: white;
+		ul{
+			padding: 0px;
+			margin: 0px;
+			li{
+				position: relative;
+				h2{
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					transform: translate(-50%, -50%);
+					font-size: 60px;
+					z-index: 1;
+				}
+				img{
+					display: block;
+					max-width:100%;
+					-webkit-filter: grayscale(100%);
+    				filter: grayscale(100%);
+				}
+
+				&:hover img{
+					-webkit-animation: filter-animation 2s;
+					animation-fill-mode: forwards;
+				}
+
+				@-webkit-keyframes filter-animation {
+					  0% {
+					    -webkit-filter: grayscale(1);
+					  }
+					  
+					
+					  
+					  100% {
+					    -webkit-filter: grayscale(0);
+					  }
+					}
+			}
+		}
+	}
+}

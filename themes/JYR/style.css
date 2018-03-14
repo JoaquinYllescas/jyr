@@ -161,7 +161,9 @@ header {
   display: block; }
 
 /*SECTION MAIN*/
+/*START TABLET*/
 @media only screen and (min-width: 768px) {
+  /*HOME*/
   #bgvid {
     display: block;
     position: fixed;
@@ -173,7 +175,7 @@ header {
     height: auto;
     z-index: 91;
     transform: translateX(-50%) translateY(-50%);
-    background: url("http://jyr.dev/wp-content/uploads/2017/09/dublinNight-3-768x512.jpg") no-repeat;
+    background: url("http://jyr.dev/wp-content/uploads/2017/09/patternLoader.jpg") no-repeat;
     background-size: cover;
     transition: 1s opacity; }
   #scene {
@@ -182,7 +184,7 @@ header {
     height: 100% !important;
     z-index: 95;
     position: absolute;
-    top: 0px;
+    top: -5%;
     left: 0px; }
     #scene .bgScene {
       width: 110% !important;
@@ -193,6 +195,45 @@ header {
       margin-left: -20px; }
     #scene .faceScene {
       width: 105% !important;
-      height: 105% !important;
+      height: 110% !important;
       background-repeat: no-repeat;
-      background-size: cover; } }
+      background-size: cover; }
+  /*END HOME*/
+  /*PHOTOGRAPHY*/
+  main.photography {
+    background-size: cover; }
+  /*END PHOTOGRAPHY*/ }
+
+.photography .projects {
+  height: 100%;
+  width: 40%;
+  position: absolute;
+  right: 5%;
+  padding: 0px 20px;
+  background-color: white; }
+  .photography .projects ul {
+    padding: 0px;
+    margin: 0px; }
+    .photography .projects ul li {
+      position: relative; }
+      .photography .projects ul li h2 {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 60px;
+        z-index: 1; }
+      .photography .projects ul li img {
+        display: block;
+        max-width: 100%;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%); }
+      .photography .projects ul li:hover img {
+        -webkit-animation: filter-animation 2s;
+        animation-fill-mode: forwards; }
+
+@-webkit-keyframes filter-animation {
+  0% {
+    -webkit-filter: grayscale(1); }
+  100% {
+    -webkit-filter: grayscale(0); } }

@@ -102,7 +102,10 @@ header{
 
 
 
+/*START TABLET*/
+
 @media only screen and (min-width:768px) {
+	/*HOME*/
 	#bgvid { 
 		display: block;
 	    position: fixed;
@@ -114,7 +117,7 @@ header{
 	    height: auto;
 	    z-index: 91;
 	    transform: translateX(-50%) translateY(-50%);
-	 	background: url('http://jyr.dev/wp-content/uploads/2017/09/dublinNight-3-768x512.jpg') no-repeat;
+	 	background: url('http://jyr.dev/wp-content/uploads/2017/09/patternLoader.jpg') no-repeat;
 	  	background-size: cover;
 	  	transition: 1s opacity;
 	}
@@ -125,7 +128,7 @@ header{
 	  height: 100% !important;
 	  z-index: 95;
 	  position: absolute;
-	  top: 0px;
+	  top: -5%;
 	  left: 0px;
 	  
 
@@ -139,10 +142,18 @@ header{
 		}
 		.faceScene{
 			width: 105% !important;
-			height: 105% !important;
+			height: 110% !important;
 			background-repeat: no-repeat;
 			background-size: cover;
 
 		}
 	}
+	/*END HOME*/
+
+
+	/*PHOTOGRAPHY*/
+	main.photography{
+		background-size: cover;
+	}
+	/*END PHOTOGRAPHY*/
 }
